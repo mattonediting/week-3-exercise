@@ -1,0 +1,219 @@
+/**
+ * Style Defaults
+ */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+ 
+body {
+  color: #303030;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  color: #db0a5b;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1,
+h2,
+ol,
+p,
+ul {
+  line-height: 1.5;
+}
+h1 {
+  fontsize: 1.75rem;
+  margin-bottom:  0 0 1.5rem;
+}
+
+h2 {
+  fontsize: 1.25rem;
+  margin-bottom: 0 0 1.5rem;
+}
+
+ol,
+p,
+ul {
+  fontsize: 1.125rem;
+  margin-bottom: 0 0 1.5rem;
+}
+
+
+.header {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.container{
+  padding: 12px;
+  margin: 0 auto;
+  max-width: 720px;
+}
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: .5rem;
+}
+
+.main-nav-item {
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.main-nav-item a {
+  display: inline block;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.tips {
+  background: #eaeaea;
+  border-left: 2px solid #db0a5b;
+  display: inline-block;
+  padding: .25rem;
+}
+
+/**
+ * Layout Styles
+ *
+ * @ToDo: Create and style a .main-header class
+ *        - Add padding
+ *        - Display as flexbox
+ *        - Align heading and menu along X axis
+ *        - Nav items should be aligned to the right
+ */
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-item {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav-item a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+img {
+  border-radius: 1rem;
+  display: block;
+  height: auto;
+  width: 100px;
+}
+
+.container {
+  grid-row-gap: .25rem;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2rem;
+}
+
+.gallery {
+  justify-self: left;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+/**
+ * Larger Screens
+ *
+ * Use this media query for desktop styles
+ */
+@media screen and (min-width: 640px){
+/*   .header { 
+    display: flex;
+      allign-items: center;
+      justify-content: space-between; 
+  }
+  */
+  .main-nav-list {
+/*     display: flex; */
+      align-items: center;
+  }
+/**
+* Utilities
+*/
+.flex-md {
+  display: flex;
+}
+
+.items-center-md {
+  align-items: center;
+}
+
+.space-between-md {
+  justify-content: space-between;
+  }
+
+.row-md {
+  flex-direction: row;
+  }
+
+.row-reverse-md {
+  flex-direction: row-reverse;
+  }
+  .container {
+  grid-row-gap: 5rem;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2rem;
+  }
+.gallery {
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+}
